@@ -1,0 +1,19 @@
+@font-face { 
+    font-family: "Georgia";
+    src: url("./Georgia/GeorgiaRegular/GeorgiaRegular.eot");
+    src: url("./Georgia/GeorgiaRegular/GeorgiaRegular.eot?#iefix") format("embedded-opentype"),
+    url("./Georgia/GeorgiaRegular/GeorgiaRegular.woff") format("woff"),
+    url("./Georgia/GeorgiaRegular/GeorgiaRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face { 
+    font-family: "Arial";
+    src: url("./Arial/ArialRegular/ArialRegular.eot");
+    src: url("./Arial/ArialRegular/ArialRegular.eot?#iefix") format("embedded-opentype"),
+    url("./Arial/ArialRegular/ArialRegular.woff") format("woff"),
+    url("./Arial/ArialRegular/ArialRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}

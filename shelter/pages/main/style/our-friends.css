@@ -110,7 +110,7 @@
     height: 100%;
     cursor: pointer;
 
-    background-color: white;
+    background-color: inherit;
 
     border: 2px solid #F1CDB3;
     box-sizing: border-box;

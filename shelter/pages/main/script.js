@@ -22,12 +22,11 @@ PETS.forEach(element => {
 
 
 const swiper = new Swiper('.our-friends__slider', {
-    loop: true,
     slidesPerView: 3,
     spaceBetween: 90,
-    centeredSlides: true,
     navigation: {
         nextEl: '.our-friend__button-next',
         prevEl: '.our-friend__button-prev',
+        disabledClass: 'our-friend__button--disabled'
     },
 });

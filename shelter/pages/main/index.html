@@ -5,11 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../assets/fonts/fonst.css">
+    <link rel="stylesheet" href="./style/normalize.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./style/header.css">
     <link rel="stylesheet" href="./style/not-only.css">
-    <link rel="stylesheet" href="./style//cozy-house.css">
-    <title>Cozy Hotel</title>
+    <link rel="stylesheet" href="./style/cozy-house.css">
+    <link rel="stylesheet" href="./style/our-friends.css">
+    <link rel="stylesheet" href="./style/help.css">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+  />
+    <title>Cozy House</title>
 </head>
 <body>
     <div class="page">
@@ -22,10 +29,10 @@
 
                 <nav class="header__nav">
                     <ul class="nav__list">
-                        <li class="nav__item nav__item--active">About the shelter</li>
-                        <li class="nav__item">Our pets</li>
-                        <li class="nav__item">Help the shelter</li>
-                        <li class="nav__item">Contacts</li>
+                        <li class="nav__item nav__item--active"><a href="" class="nav__link">About the shelter</a></li>
+                        <li class="nav__item"><a href="" class="nav__link">Our pets</a></li>
+                        <li class="nav__item"><a href="" class="nav__link">Help the shelter</a></li>
+                        <li class="nav__item"><a href="" class="nav__link">Contacts</a></li>
                     </ul>
                 </nav>
             </header>
@@ -55,7 +62,7 @@
         <main class="main">
             <section class="cozy-house page__wrapper">
                 <div class="cozy-house__wrapper-img">
-                    <img src="../../assets/images/catAndDog.png" alt="dog and cat" class="cozy-house__img">
+                    <img src="../../assets/images/cat-and-dog.png" alt="dog and cat" class="cozy-house__img">
                 </div>
                 <div class="cozy-house__text">
                     <h3 class="cozy-house__title">About the shelter</br> “Cozy House”</h3>
@@ -69,6 +76,101 @@
                     </div>
                 </div>
             </section>
+
+            <section class="our-friends">
+                <div class="our-friends__container page__wrapper">
+                    <h3 class="our-friends__title">Our friends who </br> are looking for a house</h3>
+
+                    <div class="our-friends__slider-wrapper">
+                        <div class="our-friends__slider swiper">
+                            <div class="swiper-wrapper">
+                
+                            </div>
+                        </div>
+    
+                        <div class="our-friend__button-prev">
+                            <svg width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 2V4H3V6L0 3L3 0V2H14Z" fill="#292929"/>
+                            </svg>
+                        </div>
+                        <div class="our-friend__button-next">
+                            <svg width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 2V4H3V6L0 3L3 0V2H14Z" fill="#292929"/>
+                            </svg> 
+                        </div>
+                    </div>
+
+
+                    
+
+
+                    <div class="wrapper__link">
+                        <a href="" class="our-friends__link">Get to know the rest</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="help page__wrapper">
+                <h3 class="help__title">How you can help </br> our shelter</h3>
+                <div class="help__wrapper-list">
+                    <ul class="help__list">
+                        <li class="help__item">
+                            <img src="../../assets/icons/icon-pet-food.svg" alt="pet-food" class="item__icon">
+                            <h4 class="item__text">
+                                Pet food
+                            </h4>
+                        </li>
+                        <li class="help__item">
+                            <img src="../../assets/icons/icon-transportation.svg" alt="transportation" class="item__icon">
+                            <h4 class="item__text">
+                                Transportation
+                            </h4>
+                        </li>
+                        <li class="help__item">
+                            <img src="../../assets/icons/icon-toys.svg" alt="toys" class="item__icon">
+                            <h4 class="item__text">
+                                Toys
+                            </h4>
+                        </li>
+                        <li class="help__item">
+                            <img src="../../assets/icons/icon-bowls-and-cups.svg" alt="bowls-and-cups" class="item__icon">
+                            <h4 class="item__text">
+                                Bowls and cups
+                            </h4>
+                        </li>
+                        <li class="help__item">
+                            <img src="../../assets/icons/icon-shampoos.svg" alt="shampoos" class="item__icon">
+                            <h4 class="item__text">
+                                Shampoos
+                            </h4>
+                        </li>
+                        <li class="help__item">
+                            <img src="../../assets/icons/icon-vitamins.svg" alt="vitamins" class="item__icon">
+                            <h4 class="item__text">
+                                Vitamins
+                            </h4>
+                        </li>
+                        <li class="help__item">
+                            <img src="../../assets/icons/icon-medicines.svg" alt="medicines" class="item__icon">
+                            <h4 class="item__text">
+                                Medicines
+                            </h4>
+                        </li>
+                        <li class="help__item">
+                            <img src="../../assets/icons/icon-collars-leashes.svg" alt="collars_leashes" class="item__icon">
+                            <h4 class="item__text">
+                                Collars / leashes
+                            </h4>
+                        </li>
+                        <li class="help__item">
+                            <img src="../../assets/icons/icon-sleeping-area.svg" alt="sleeping-area" class="item__icon">
+                            <h4 class="item__text">
+                                Sleeping areas
+                            </h4>
+                        </li>
+                    </ul>
+                </div>
+            </section>
         </main>
 
         <footer class="footer">
@@ -76,4 +178,7 @@
         </footer>
     </div>
 </body>
+    <script src="./pets.json"></script>
+    <script type="module" src="./script.js"></script>
+
 </html>

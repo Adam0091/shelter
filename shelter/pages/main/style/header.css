@@ -52,16 +52,17 @@
     font-weight: 400;
     font-size: 15px;
     line-height: 160%;
-    /* identical to box height, or 24px */
-
-    /* color-dark-s */
     color: #CDCDCD;
+}
+.nav__item:hover {
+    color: #FAFAFA;
 }
 .nav__item--active {
     color: #FAFAFA;
     border-bottom: 4px solid #F1CDB3;
 }
 .nav__link {
+    color: inherit;
     text-decoration: none;
 }
 .nav__link:visited {

@@ -57,6 +57,10 @@
 
     margin-top: 20px;
     padding: 10px 15px;
+    text-decoration: none;
+}
+.bank-card__wrapper-number:hover {
+    background: #FDDCC4;
 }
 .bank-card__icon {
     display: flex;

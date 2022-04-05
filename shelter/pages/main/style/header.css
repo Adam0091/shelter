@@ -6,8 +6,8 @@
 }
 .header__text {
     display: flex;
-    row-gap: 10px;
     flex-direction: column;
+    row-gap: 10px;
 }
 .header__title {
     font-family: 'Georgia';
@@ -32,7 +32,6 @@
     line-height: 15px;
     /* identical to box height */
 
-    display: flex;
     align-items: center;
     letter-spacing: 0.1em;
 
@@ -61,4 +60,10 @@
 .nav__item--active {
     color: #FAFAFA;
     border-bottom: 4px solid #F1CDB3;
+}
+.nav__link {
+    text-decoration: none;
+}
+.nav__link:visited {
+    color: inherit;
 }

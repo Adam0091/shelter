@@ -34,6 +34,10 @@
     background: #F1CDB3;
     border-radius: 100px;
 }
+
+.wrapper__link:hover {
+    background: #FDDCC4;
+}
 .our-friends__link {
     text-decoration: none;
 
@@ -56,9 +60,6 @@
     position: relative;
     max-width: calc(100% - 105px*2);
     margin: 60px auto 0 auto;
-}
-
-.our-friends__slider {
 }
 
 .slide__content {
@@ -160,4 +161,14 @@
 .our-friend__button-next {
     transform :rotate(180deg)  translateY(50%);
     right: -105px;
+}
+.our-friend__button--disabled {
+    border: 2px solid #CDCDCD;
+}
+
+.our-friend__button--disabled svg path {
+    fill: #CDCDCD;
+}
+.our-friend__button--disabled:hover {
+    background-color: inherit;
 }

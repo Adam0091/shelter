@@ -43,6 +43,7 @@
 .address__second-address-wrapper  {
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 .for-quections__email-icon,

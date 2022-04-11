@@ -10,7 +10,7 @@ const OurPetsCurrentSlider = document.querySelector(
 
 const swiper = new Swiper(".our-friends__slider", {
     slidesPerView: 4,
-    spaceBetween: 40,
+    spaceBetween: 30,
     grid: {
         fill: "row",
         rows: 2,

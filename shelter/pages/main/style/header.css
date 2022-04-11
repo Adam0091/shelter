@@ -4,6 +4,9 @@
     align-items: center;
     padding-top: 60px;
 }
+.header__link {
+    text-decoration: none;
+}
 .header__text {
     display: flex;
     flex-direction: column;
@@ -38,8 +41,6 @@
     /* color-light-xl */
 
     color: #FFFFFF;
-}
-.header__nav {
 }
 .nav__list {
     list-style: none;

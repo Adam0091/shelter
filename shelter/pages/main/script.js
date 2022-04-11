@@ -12,18 +12,20 @@ PETS.forEach(element => {
         </div>
         <div class="slide__pet-name">${element.name}</div>
         <div class="slide__wrapper-btn">
-            <button class="slide__btn">Learn more</button>
+            <div class="slide__btn">Learn more</div>
         </div>
     </div>
     </div>
-    `
+    `;
 });
 
 
 
 const swiper = new Swiper('.our-friends__slider', {
+    loop: true,
     slidesPerView: 3,
     spaceBetween: 90,
+    simulateTouch: false,
     navigation: {
         nextEl: '.our-friend__button-next',
         prevEl: '.our-friend__button-prev',

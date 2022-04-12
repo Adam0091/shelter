@@ -76,6 +76,9 @@
 .slide__content:hover {
     background: #FFFFFF;
 }
+.slide__content:hover .slide__wrapper-btn {
+    background: #FDDCC4;
+}
 .slide__wrapper-img {
     border-radius: 9px 9px 0px 0px;
     width: 270px;
@@ -128,9 +131,7 @@
 
     color: #292929;
 }
-.slide__wrapper-btn:hover {
-    background: #FDDCC4;
-}
+
 .our-friend__button-prev,
 .our-friend__button-next {
     position: absolute;

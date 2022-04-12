@@ -1,11 +1,15 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position:sticky;
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: #ffffff;
 }
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .header__link {
     text-decoration: none;
 }

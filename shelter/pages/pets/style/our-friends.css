@@ -140,9 +140,7 @@
     column-gap: 20px;
 }
 
-.our-friend__current-slide {
-    background-color: #F1CDB3;
-}
+
 .our-friend__button-prev,
 .our-friend__button-next,
 .our-friend__button-begin,
@@ -159,11 +157,14 @@
     border-radius: 50%;
     z-index: 10;
     cursor: pointer;
-
+}
+.our-friend__current-slide {
+    background-color: #F1CDB3;
+    cursor: default;
 }
 .our-friend__button-prev:hover,
 .our-friend__button-next:hover,
-.our-friend__button-beginhover,
+.our-friend__button-begin:hover,
 .our-friend__button-end:hover {
     background: #FDDCC4;
 }

@@ -31,4 +31,14 @@ const swiper = new Swiper('.our-friends__slider', {
         prevEl: '.our-friend__button-prev',
         disabledClass: 'our-friend__button--disabled'
     },
+    breakpoints: {
+        321: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+        },
+        1280: {
+            slidesPerView: 3,
+            spaceBetween: 90,
+        }
+    }
 });

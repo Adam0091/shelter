@@ -1,177 +1,186 @@
 .our-friends {
-    padding: 80px 0 100px 0;
-    background: #F6F6F6;
+  padding: 80px 0 100px 0;
+  background: #f6f6f6;
 }
 .our-friends__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .our-friends__title {
-    font-family: 'Georgia';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 35px;
-    line-height: 130%;
-    /* or 45px */
+  font-family: var(--first-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
 
-    text-align: center;
-    letter-spacing: 0.06em;
+  text-align: center;
+  letter-spacing: 0.06em;
 
-    /* color-dark-l */
-
-    color: #545454;
+  color: #545454;
 }
 .wrapper__link {
-    margin-top: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    width: 261px;
-    height: 52px;
-    background: #F1CDB3;
-    border-radius: 100px;
+  width: 261px;
+  height: 52px;
+  background: var(--color-primary);
+  border-radius: 100px;
 }
 
 .wrapper__link:hover {
-    background: #FDDCC4;
+  background: #fddcc4;
 }
 .our-friends__link {
-    text-decoration: none;
+  text-decoration: none;
 
-    font-family: 'Georgia';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 130%;
-    /* identical to box height, or 22px */
+  font-family: var(--first-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
 
-    letter-spacing: 0.06em;
+  letter-spacing: 0.06em;
 
-    /* color-dark-3xl */
-
-    color: #292929;
+  color: #292929;
 }
 
-
 .our-friends__slider-wrapper {
-    position: relative;
-    max-width: calc(100% - 105px*2);
-    margin: 60px auto 0 auto;
+  position: relative;
+  max-width: calc(100% - 105px * 2);
+  margin: 60px auto 0 auto;
 }
 
 .slide__content {
-    width: 270px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    padding: 0 0 30px 0;
-    background: #FAFAFA;
-    border-radius: 9px;
+  padding: 0 0 30px 0;
+  background: #fafafa;
+  border-radius: 9px;
 }
 .slide__content:hover {
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: var(--color-secondary);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .slide__content:hover .slide__wrapper-btn {
-    background: #FDDCC4;
+  background: #fddcc4;
 }
 .slide__wrapper-img {
-    border-radius: 9px 9px 0px 0px;
-    width: 270px;
-    height: 270px;
-    background: inherit;
+  border-radius: 9px 9px 0px 0px;
+  width: 270px;
+  height: 270px;
+  background: inherit;
 }
 .slide__img {
-    width: 100%;
-    height: 100%;
-    background: inherit;
+  width: 100%;
+  height: 100%;
+  background: inherit;
 }
 .slide__pet-name {
-    margin-top: 30px;
+  margin-top: 30px;
 
-    font-family: 'Georgia';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    /* identical to box height */
+  font-family: var(--first-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
 
-    text-align: center;
-    letter-spacing: 0.06em;
+  text-align: center;
+  letter-spacing: 0.06em;
 
-    /* color-dark-l */
-
-    color: #545454;
+  color: #545454;
 }
 .slide__wrapper-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    width: 187px;
-    height: 52px;
+  width: 187px;
+  height: 52px;
 
-    margin-top: 30px;
-    background-color: inherit;
-    border: 2px solid #F1CDB3;
-    box-sizing: border-box;
-    border-radius: 100px;
+  margin-top: 30px;
+  background-color: inherit;
+  border: 2px solid var(--color-primary);
+  box-sizing: border-box;
+  border-radius: 100px;
 
-    cursor: pointer;
+  cursor: pointer;
 }
 .slide__btn {
-    font-family: 'Georgia';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 130%;
-    letter-spacing: 0.06em;
+  font-family: var(--first-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
 
-    color: #292929;
+  color: #292929;
 }
 
 .our-friend__button-prev,
 .our-friend__button-next {
-    position: absolute;
-    top: 50%;
-    width: 52px;
-    height: 52px;
+  position: absolute;
+  top: 50%;
+  width: 52px;
+  height: 52px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    border: 2px solid #F1CDB3;
-    border-radius: 50%;
-    z-index: 10;
-    cursor: pointer;
-
+  border: 2px solid var(--color-primary);
+  border-radius: 50%;
+  z-index: 10;
+  cursor: pointer;
 }
 .our-friend__button-prev:hover,
 .our-friend__button-next:hover {
-    background: #FDDCC4;
+  background: #fddcc4;
 }
 
 .our-friend__button-prev {
-    transform:  translateY(-50%);
-    left: -105px;
+  transform: translateY(-50%);
+  left: -105px;
 }
 .our-friend__button-next {
-    transform :rotate(180deg)  translateY(50%);
-    right: -105px;
+  transform: rotate(180deg) translateY(50%);
+  right: -105px;
 }
 .our-friend__button--disabled {
-    border: 2px solid #CDCDCD;
+  border: 2px solid var(--color-nav-item);
 }
 
 .our-friend__button--disabled svg path {
-    fill: #CDCDCD;
+  fill: var(--color-nav-item);
 }
 .our-friend__button--disabled:hover {
-    background-color: inherit;
+  background-color: inherit;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+  .our-friends__slider-wrapper {
+    position: relative;
+    max-width: 580px;
+    margin: 60px auto 0 auto;
+  }
+  .our-friend__button-next {
+    right: -12px;
+    transform: rotate(180deg) translate(-100%, 50%);
+  }
+  .our-friend__button-prev {
+    left: -12px;
+    transform: translate(-100%, -50%);
+  }
 }

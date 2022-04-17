@@ -32,7 +32,11 @@ const swiper = new Swiper('.our-friends__slider', {
         disabledClass: 'our-friend__button--disabled'
     },
     breakpoints: {
-        321: {
+        1: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+        },
+        768: {
             slidesPerView: 2,
             spaceBetween: 40,
         },

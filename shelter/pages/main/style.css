@@ -36,11 +36,17 @@ html {
   scroll-behavior: smooth;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1279px) {
   .page__wrapper {
     overflow: hidden;
     max-width: 768px;
     padding-left: 30px;
     padding-right: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .page__wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }

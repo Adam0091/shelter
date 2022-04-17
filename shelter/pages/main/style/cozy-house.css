@@ -10,8 +10,8 @@
   margin-right: 120px;
 }
 .cozy-house__img {
-  width: 300px;
-  height: 408px;
+  width: 100%;
+  height: 100%;
 }
 .cozy-house__text {
   max-width: 430px;
@@ -43,7 +43,8 @@
 
   color: var(--color-dark-l);
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+
+@media screen and (max-width: 1279px) {
   .cozy-house__container {
     flex-direction: column;
   }
@@ -57,5 +58,28 @@
   }
   .cozy-house__description {
     margin-top: 23px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cozy-house {
+    padding: 42px 0 35px 0;
+  }
+  .cozy-house__title {
+    text-align: center;
+
+    font-size: 25px;
+  }
+  .cozy-house__text {
+    padding: 0 15px;
+  }
+  .cozy-house__paragraph {
+    text-align: justify;
+  }
+  .cozy-house__wrapper-img {
+    margin: 40px 0 0 0;
+  }
+  .cozy-house__img {
+    max-height: 354px;
   }
 }

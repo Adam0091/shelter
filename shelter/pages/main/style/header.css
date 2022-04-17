@@ -48,6 +48,11 @@
   display: flex;
   column-gap: 35px;
 }
+.header__burger {
+  display: none;
+  cursor: pointer;
+  margin-right: 43px;
+}
 .nav__item {
   font-family: var(--second-font-family);
   font-style: normal;
@@ -71,9 +76,19 @@
   color: inherit;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (max-width: 1279px) {
   .header {
     padding-top: 30px;
     background-size: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav__list {
+    display: none;
+  }
+  .header__burger {
+    display: block;
+    transform: rotate(90deg);
   }
 }

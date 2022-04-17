@@ -9,18 +9,40 @@ const OurPetsCurrentSlider = document.querySelector(
 );
 
 const swiper = new Swiper(".our-friends__slider", {
-    slidesPerView: 4,
-    spaceBetween: 30,
-    grid: {
-        fill: "row",
-        rows: 2,
-    },
-    simulateTouch: false,
+
     navigation: {
         nextEl: ".our-friend__button-next",
         prevEl: ".our-friend__button-prev",
         disabledClass: "our-friend__button--disabled",
+        lockClass: "our-friend__button-lock",
     },
+    breakpoints: {
+        1: {
+            slidesPerView: 1,
+            // centeredSlides: true,
+            spaceBetween: 30,
+            grid: {
+                fill: "row",
+                rows: 3,
+            }
+        },
+        600: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            grid: {
+                fill: "row",
+                rows: 3,
+            }
+        },
+        1280: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            grid: {
+                fill: "row",
+                rows: 2,
+            }
+        }
+    }
 });
 
 main();
@@ -30,6 +52,7 @@ function main() {
     updateButtonBeginAndEnd();
 
     swiper.on("slideChange", eventSlideChange);
+    swiper.on("beforeResize", updateButtonBeginAndEnd);
     document.addEventListener("click", checkEventTargets);
 }
 
@@ -86,13 +109,13 @@ function checkEventTargets(event) {
 
 function updateButtonBeginAndEnd() {
 
-    if (swiper.realIndex === 0 || swiper.realIndex === 1) {
+    if (swiper.isBeginning) {
         DomSlideButtonBegin.classList.add("our-friend__button--disabled");
     } else {
         DomSlideButtonBegin.classList.remove("our-friend__button--disabled");
     }
 
-    if (swiper.realIndex === 3) {
+    if (swiper.isEnd) {
         DomSlideButtonEnd.classList.add("our-friend__button--disabled");
     } else {
         DomSlideButtonEnd.classList.remove("our-friend__button--disabled");

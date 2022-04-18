@@ -137,6 +137,7 @@
   display: flex;
   position: relative;
   column-gap: 20px;
+  z-index: 2;
 }
 
 .our-friend__button-prev,

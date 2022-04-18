@@ -85,6 +85,7 @@
 
 @media screen and (max-width: 767px) {
   .header__container {
+    padding: 15px;
     justify-content: flex-end;
   }
   .header__link {

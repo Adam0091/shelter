@@ -102,6 +102,9 @@
 }
 
 @media screen and (max-width: 767px) {
+  .not-only {
+    padding-top: 55px;
+  }
   .not-only__container {
     min-height: auto;
   }

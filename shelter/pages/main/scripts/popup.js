@@ -1,32 +1,18 @@
 const result = await fetch("./pets.json");
 const PETS = await result.json();
 
-/**
- * Релизовать отрисовку только при нажатии на кнопку
- * отслеживание событий делаем через всплытие
- *
- * отриосвывать будем в body
- */
-
 const bodyDOM = document.querySelector("body");
 
 document.addEventListener("click", (e) => {
     const target = e.target;
 
-    if (target.classList.contains("slide__wrapper-btn")) {
+    if (target.closest(".slide__content")) {
         const index = target.getAttribute("data-index");
         openPopup(index);
         return;
     }
-    if (target.parentNode.classList.contains("slide__wrapper-btn")) {
-        const index = target.parentNode.getAttribute("data-index");
-        openPopup(index);
-        return;
-    }
     if (target.classList.contains('popup__body') ||
-        target.classList.contains('popup__close') ||
-        target.parentNode.classList.contains('popup__close') ||
-        target.parentNode.parentNode.classList.contains('popup__close')
+        target.closest('.popup__close')
     ) {
         closePopup();
     }

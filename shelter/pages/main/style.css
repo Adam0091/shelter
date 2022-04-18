@@ -16,22 +16,34 @@ h1 {
   margin: 0;
   box-sizing: border-box;
 }
+li {
+  list-style-type: none;
+}
 
 .page {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
 }
 
+.page__shadow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  z-index: 2;
+
+  background: rgba(41, 41, 41, 0.6);
+  transition: all 0.05s;
+}
 .page__wrapper {
   padding-left: 40px;
   padding-right: 40px;
   max-width: 1280px;
   margin: 0 auto;
 }
-
 html {
   scroll-behavior: smooth;
 }
@@ -45,8 +57,15 @@ html {
   }
 }
 @media screen and (max-width: 767px) {
+  .lock {
+    overflow: hidden;
+  }
   .page__wrapper {
     padding-left: 10px;
     padding-right: 10px;
+  }
+  .page__shadow--active {
+    width: 100%;
+    height: 100%;
   }
 }

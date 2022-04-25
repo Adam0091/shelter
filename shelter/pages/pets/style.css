@@ -19,6 +19,9 @@ h1 {
 html {
   scroll-behavior: smooth;
 }
+ul {
+  list-style: none;
+}
 .page {
   position: absolute;
   top: 0;

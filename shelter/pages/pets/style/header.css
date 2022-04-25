@@ -115,7 +115,7 @@
     color: #9e9d9d;
   }
   .nav__list--active .nav__item--active {
-    color: #c5c1c1;
+    color: #2b2b2b;
   }
   .nav__list--active .nav__item:hover {
     color: #9e9d9d;
@@ -133,7 +133,7 @@
     row-gap: 30px;
     padding: 248px 0 0 0;
 
-    background: #292929;
+    background: #ffffff;
     overflow: hidden;
     transition: all 0.5s;
     z-index: 3;

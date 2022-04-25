@@ -4,23 +4,26 @@ const result = await fetch("./pets.json");
 const PETS = await result.json();
 const DomSlideButtonBegin = document.querySelector(".our-friend__button-begin");
 const DomSlideButtonEnd = document.querySelector(".our-friend__button-end");
-const OurPetsCurrentSlider = document.querySelector(
-    ".our-friend__current-slide"
-);
-
 
 const swiper = new Swiper(".our-friends__slider", {
-
     navigation: {
         nextEl: ".our-friend__button-next",
         prevEl: ".our-friend__button-prev",
         disabledClass: "our-friend__button--disabled",
         lockClass: "our-friend__button-lock",
     },
+    pagination: {
+        el: '.pagination',
+        type: 'custom',
+        renderCustom: function (swiper, current, total) {
+            return `<span>${current}</span>`;
+        }
+
+    },
     breakpoints: {
         1: {
             slidesPerView: 1,
-            // centeredSlides: true,
+            slidesPerGroup: 1,
             spaceBetween: 30,
             grid: {
                 fill: "row",
@@ -29,6 +32,7 @@ const swiper = new Swiper(".our-friends__slider", {
         },
         600: {
             slidesPerView: 2,
+            slidesPerGroup: 2,
             spaceBetween: 30,
             grid: {
                 fill: "row",
@@ -37,23 +41,50 @@ const swiper = new Swiper(".our-friends__slider", {
         },
         1280: {
             slidesPerView: 4,
+            slidesPerGroup: 4,
             spaceBetween: 30,
             grid: {
                 fill: "row",
                 rows: 2,
             }
         }
+    },
+    on: {
+        slideChange: eventSlideChange,
+        beforeResize: updateButtonBeginAndEnd,
+        breakpoint: function (swiper, breakpointParams) {
+            let slides = [];
+            const firstPartSlides = sliceArray(swiper.slides, 8);
+            for (let i = 0; i < 6; i++) {
+                slides = slides.concat(...firstPartSlides);
+            }
+            let sliceSlides;
+
+            if (breakpointParams.slidesPerView === 4) {
+                sliceSlides = sliceArray(slides, 8);
+            }
+            if (breakpointParams.slidesPerView === 2) {
+                sliceSlides = sliceArray(slides, 6);
+            }
+            if (breakpointParams.slidesPerView === 1) {
+                sliceSlides = sliceArray(slides, 3);
+            }
+            if (sliceSlides) {
+                swiper.wrapperEl.innerHTML = '';
+                sliceSlides = sliceSlides.map(slides => shuffle(slides));
+                slides = [].concat(...sliceSlides);
+
+                swiper.appendSlide(slides)
+                swiper.update();
+            }
+        }
     }
 });
-
 main();
 
 function main() {
     addSlides();
     updateButtonBeginAndEnd();
-
-    swiper.on("slideChange", eventSlideChange);
-    swiper.on("beforeResize", updateButtonBeginAndEnd);
     document.addEventListener("click", checkEventTargets);
 }
 
@@ -77,13 +108,13 @@ function addSlides() {
         `);
 
     });
-
+    slides = reapiteSlides(slides);
+    let sheffleMatrixSlides = sliceArray(slides, 8).map(slides => shuffle(slides));
+    slides = [].concat(...sheffleMatrixSlides);
     swiper.appendSlide(slides);
 }
 
 function eventSlideChange() {
-    let currentSlider = ++swiper.realIndex;
-    OurPetsCurrentSlider.innerHTML = `${currentSlider}`;
     updateButtonBeginAndEnd();
 }
 
@@ -123,4 +154,23 @@ function updateButtonBeginAndEnd() {
     } else {
         DomSlideButtonEnd.classList.remove("our-friend__button--disabled");
     }
+}
+
+function sliceArray(arr, lengthNewArr) {
+    let res = []
+    const count = parseInt(arr.length / lengthNewArr)
+    for (let i = 0; i < count; i++) {
+        res.push(arr.slice(i * lengthNewArr, i * lengthNewArr + lengthNewArr))
+    }
+    return res;
+}
+
+function shuffle(arr) {
+    return arr.map(value => ({ value, sort: Math.random() }))
+        .sort((a, b) => a.sort - b.sort)
+        .map(({ value }) => value)
+}
+
+function reapiteSlides(pets) {
+    return [...pets, ...pets, ...pets, ...pets, ...pets, ...pets];
 }

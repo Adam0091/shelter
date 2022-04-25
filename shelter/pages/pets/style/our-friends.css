@@ -145,7 +145,7 @@
 .our-friend__button-begin,
 .our-friend__button-end,
 .our-friend__current-slide {
-  width: 52px;
+  width: 52px !important;
   height: 52px;
 
   -webkit-touch-callout: none;

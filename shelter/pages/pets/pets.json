@@ -55,17 +55,6 @@
       "parasites": ["none"]
     },
     {
-      "name": "Freddie",
-      "img": "../../assets/images/freddie.png",
-      "type": "Cat",
-      "breed": "British Shorthair",
-      "description": "Freddie is a little shy at first, but very sweet when he warms up. He likes playing with shoe strings and bottle caps. He is quick to learn the rhythms of his human’s daily life. Freddie has bounced around a lot in his life, and is looking to find his forever home.",
-      "age": "2 months",
-      "inoculations": ["rabies"],
-      "diseases": ["none"],
-      "parasites": ["none"]
-    },
-    {
       "name": "Timmy",
       "img": "../../assets/images/timmy.png",
       "type": "Cat",
@@ -77,28 +66,6 @@
       "parasites": ["none"]
     },
     {
-      "name": "Charly",
-      "img": "../../assets/images/charly.png",
-      "type": "Dog",
-      "breed": "Jack Russell Terrier",
-      "description": "This cute boy, Charly, is three years old and he likes adults and kids. He isn’t fond of many other dogs, so he might do best in a single dog home. Charly has lots of energy, and loves to run and play. We think a fenced yard would make him very happy.",
-      "age": "8 years",
-      "inoculations": ["bordetella bronchiseptica", "leptospirosis"],
-      "diseases": ["deafness", "blindness"],
-      "parasites": ["lice", "fleas"]
-    },
-    {
-      "name": "Scarlett",
-      "img": "../../assets/images/scarlett.png",
-      "type": "Dog",
-      "breed": "Jack Russell Terrier",
-      "description": "Scarlett is a happy, playful girl who will make you laugh and smile. She forms a bond quickly and will make a loyal companion and a wonderful family dog or a good companion for a single individual too since she likes to hang out and be with her human.",
-      "age": "3 months",
-      "inoculations": ["parainfluenza"],
-      "diseases": ["none"],
-      "parasites": ["none"]
-    },
-    {
       "name": "Freddie",
       "img": "../../assets/images/freddie.png",
       "type": "Cat",
@@ -107,17 +74,6 @@
       "age": "2 months",
       "inoculations": ["rabies"],
       "diseases": ["none"],
-      "parasites": ["none"]
-    },
-    {
-      "name": "Timmy",
-      "img": "../../assets/images/timmy.png",
-      "type": "Cat",
-      "breed": "British Shorthair",
-      "description": "Timmy is an adorable grey british shorthair male. He loves to play and snuggle. He is neutered and up to date on age appropriate vaccinations. He can be chatty and enjoys being held. Timmy has a lot to say and wants a person to share his thoughts with.",
-      "age": "2 years 3 months",
-      "inoculations": ["calicivirus", "viral rhinotracheitis"],
-      "diseases": ["kidney stones"],
       "parasites": ["none"]
     },
     {

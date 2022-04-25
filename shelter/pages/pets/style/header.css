@@ -108,8 +108,8 @@
   }
 
   .header__link--active {
-    left: calc(100% - 120px);
-    transform: translateX(-100%);
+    left: calc(100% - 300px);
+    /* transform: translateX(calc(-100% + 220px)); */
   }
   .header__link--active .header__subtitle {
     color: #9e9d9d;

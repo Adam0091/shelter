@@ -97,8 +97,8 @@
   }
 
   .header__link--active {
-    left: calc(100% - 120px);
-    transform: translateX(-100%);
+    left: calc(100% - 300px);
+    /* transform: translateX(calc(-100% + 220px)); */
   }
   .nav__list {
     position: absolute;
